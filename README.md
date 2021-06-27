@@ -1,6 +1,4 @@
-### Hi there 👋
-
-I am a full-stack developer passionate about UI/UX, static typing, and unit testing. 
+Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and unit testing. 
 I  believe explaining is a great way of learning that's why I do blogging: https://teletype.in/@alteregor
 
 I've been playing guitar for over half of my life. Check out my recently launched [YouTube channel](https://www.youtube.com/channel/UCvXwFXFuqfcuyKX5zeBfUuQ).
