@@ -1,0 +1,13 @@
+{
+    "name": "egor/kubk",
+    "type": "project",
+    "require": {
+        "dg/rss-php": "^1.5"
+    },
+    "authors": [
+        {
+            "name": "Egor Gorbachev",
+            "email": "7gorbachevm@gmail.com"
+        }
+    ]
+}
