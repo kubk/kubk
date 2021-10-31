@@ -1,4 +1,4 @@
-Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and unit testing. 
+Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and automated testing. 
 I  believe explaining is a great way of learning that's why I do blogging. Latest blog posts:
 - [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar)
 - [Configure HTTPS for wildcard domains with Nginx and Certbot](https://teletype.in/@alteregor/nginx-certbot-wildcard)
