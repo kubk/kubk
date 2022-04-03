@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $feed = Feed::loadRss('https://teletype.in/rss/alteregor')->toArray();
 
-$recentPosts = array_slice(array: $feed['item'], offset: 0, length: 3);
+$recentPosts = array_slice(array: $feed['item'], offset: 0, length: 4);
 
 $postsString = array_reduce(
     array: $recentPosts,
