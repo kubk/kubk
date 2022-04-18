@@ -1,0 +1,25 @@
+{
+  "name": "kubk",
+  "version": "1.0.0",
+  "description": "Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and software testing. Latest blog posts:",
+  "main": "index.js",
+  "scripts": {
+    "generate": "npx ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubk/kubk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kubk/kubk/issues"
+  },
+  "homepage": "https://github.com/kubk/kubk#readme",
+  "dependencies": {
+    "prettier": "^2.6.2",
+    "rss-parser": "^3.12.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
