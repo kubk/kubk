@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kubk/kubk#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "prettier": "^2.6.2",
     "rss-parser": "^3.12.0",
     "ts-node": "^10.7.0",
