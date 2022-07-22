@@ -12,7 +12,7 @@ const formatStarsCount = (count: number) => {
 const contributedRepositories = [
   {
     url: "mobxjs/mobx",
-    text: `[11 contributions](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace 'any' with a generic in Set](https://github.com/mobxjs/mobx/pull/3338)`,
+    text: `[13 contributions](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Mock console.warn in tests and verify warnings are called in the right place](https://github.com/mobxjs/mobx/pull/3352)`,
   },
   {
     url: "katspaugh/wavesurfer.js",
