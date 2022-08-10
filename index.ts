@@ -12,7 +12,7 @@ const formatStarsCount = (count: number) => {
 const contributedRepositories = [
   {
     url: "mobxjs/mobx",
-    text: `[14 contributions](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Mock console.warn in tests and verify warnings are called in the right place](https://github.com/mobxjs/mobx/pull/3352)`,
+    text: `[15 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Mock console.warn in tests and verify warnings are called in the right place](https://github.com/mobxjs/mobx/pull/3352)`,
   },
   {
     url: "katspaugh/wavesurfer.js",
@@ -40,7 +40,7 @@ const contributedRepositories = [
   },
   {
     url: "mobxjs/mobx-angular",
-    text: `[10 contributions](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101)`,
+    text: `[10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101)`,
   },
 ];
 
