@@ -19,6 +19,6 @@ Latest blog posts:
 - [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor)
 - [Configure HTTPS for wildcard domains with Nginx and Certbot](https://teletype.in/@alteregor/nginx-certbot-wildcard?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor)
 
-I play guitar ([YouTube](https://www.youtube.com/channel/UCvXwFXFuqfcuyKX5zeBfUuQ)) and also do drone shooting ([Youtube](https://www.youtube.com/channel/UCFM1UaRIPcb747OfE5omukQ/videos))
+I play guitar ([YouTube](https://www.youtube.com/channel/UCvXwFXFuqfcuyKX5zeBfUuQ/videos)) and also do drone shooting ([Youtube](https://www.youtube.com/channel/UCFM1UaRIPcb747OfE5omukQ/videos))
 
 Contact me via [Telegram](https://t.me/egorvn) or [Email](mailto:7gorbachevm@gmail.com)

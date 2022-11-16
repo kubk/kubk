@@ -2,6 +2,30 @@ import axios from "axios";
 const Parser = require("rss-parser");
 import { readFile, writeFile } from "fs/promises";
 
+const replaceReadmeContent = async (
+  replacements: Array<{ search: RegExp; replaceWith: string }>
+) => {
+  let readmeContents = await readFile("README-template.md", "utf-8");
+
+  for (const { search, replaceWith } of replacements) {
+    readmeContents = readmeContents.replace(search, replaceWith);
+  }
+
+  await writeFile("README.md", readmeContents);
+};
+
+const getArticlesAsString = async () => {
+  const rssParser = new Parser();
+  const feed = await rssParser.parseURL("https://teletype.in/rss/alteregor");
+
+  return feed.items
+    .slice(0, 4)
+    .reduce((acc: string, item: { title: string; link: string }) => {
+      return `${acc}
+- [${item.title}](${item.link})`;
+    }, "");
+};
+
 const formatStarsCount = (count: number) => {
   if (count < 1000) {
     return `⭐${count}`;
@@ -44,29 +68,7 @@ const contributedRepositories = [
   },
 ];
 
-const replaceReadmeContent = async (
-  replacements: Array<{ search: RegExp; replaceWith: string }>
-) => {
-  let readmeContents = await readFile("README-template.md", "utf-8");
-
-  for (const { search, replaceWith } of replacements) {
-    readmeContents = readmeContents.replace(search, replaceWith);
-  }
-
-  await writeFile("README.md", readmeContents);
-};
-
-(async () => {
-  const rssParser = new Parser();
-  const feed = await rssParser.parseURL("https://teletype.in/rss/alteregor");
-
-  const postsMarkdownString = feed.items
-    .slice(0, 4)
-    .reduce((acc: string, item: { title: string; link: string }) => {
-      return `${acc}
-- [${item.title}](${item.link})`;
-    }, "");
-
+const getRepositoriesAsString = async () => {
   let newReposContents = "";
   for (const repo of contributedRepositories) {
     const [, repoName] = repo.url.split("/");
@@ -81,8 +83,12 @@ const replaceReadmeContent = async (
     )}) - ${repo.text} (merged)\n`;
   }
 
+  return newReposContents;
+};
+
+(async () => {
   await replaceReadmeContent([
-    { search: /\/\/repos/s, replaceWith: newReposContents },
-    { search: /\/\/posts/s, replaceWith: postsMarkdownString },
+    { search: /\/\/repos/s, replaceWith: await getRepositoriesAsString() },
+    { search: /\/\/posts/s, replaceWith: await getArticlesAsString() },
   ]);
 })();
