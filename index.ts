@@ -36,7 +36,7 @@ const formatStarsCount = (count: number) => {
 const contributedRepositories = [
   {
     url: "mobxjs/mobx",
-    text: `[16 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Make mobx-react compatible with TS 4.8+](https://github.com/mobxjs/mobx/pull/3565)`,
+    text: `[17 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Make mobx-react compatible with TS 4.8+](https://github.com/mobxjs/mobx/pull/3565)`,
   },
   {
     url: "katspaugh/wavesurfer.js",
