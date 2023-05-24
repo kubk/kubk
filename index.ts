@@ -39,6 +39,10 @@ const contributedRepositories = [
     text: `[20 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Circle CI with GitHub CI](https://github.com/mobxjs/mobx/pull/3604)`,
   },
   {
+    url: 'phpstan/phpstan',
+    text: `[Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371)`
+  },
+  {
     url: "katspaugh/wavesurfer.js",
     text: `[Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760)`,
   },
