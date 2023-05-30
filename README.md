@@ -4,14 +4,13 @@ My contributions to Open Source:
 - mobx (⭐26.5k+️) - [20 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Circle CI with GitHub CI](https://github.com/mobxjs/mobx/pull/3604) (merged)
 - phpstan (⭐11.9k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - wavesurfer.js (⭐7.0k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
-- ts-essentials (⭐3.1k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
+- ts-essentials (⭐3.2k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - botman (⭐5.9k+️) - [Add PSR-11 ContainerInterface](https://github.com/botman/botman/pull/714) (merged)
 - gzipper (⭐60) - [Add --include flag](https://github.com/gios/gzipper/pull/20) (merged)
 - construct-js (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
 - pusher-js-mock (⭐31) - [Add unbind_all() method](https://github.com/nikolalsvk/pusher-js-mock/pull/35) (merged)
-- mobx-angular (⭐471) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
+- mobx-angular (⭐472) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
 
-... and more
 
 Latest blog posts:
 

@@ -2,7 +2,6 @@ Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing,
 
 My contributions to Open Source:
 //repos
-... and more
 
 Latest blog posts:
 //posts
