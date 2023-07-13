@@ -1,7 +1,7 @@
 Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and software testing.
 
 My contributions to Open Source:
-- mobx (⭐26.6k+️) - [20 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Circle CI with GitHub CI](https://github.com/mobxjs/mobx/pull/3604) (merged)
+- mobx (⭐26.6k+️) - [21 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Circle CI with GitHub CI](https://github.com/mobxjs/mobx/pull/3604) (merged)
 - phpstan (⭐12.0k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - wavesurfer.js (⭐7.2k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
 - ts-essentials (⭐3.2k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
