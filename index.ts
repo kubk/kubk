@@ -55,16 +55,8 @@ const contributedRepositories = [
     text: `[Add PSR-11 ContainerInterface](https://github.com/botman/botman/pull/714)`,
   },
   {
-    url: "gios/gzipper",
-    text: `[Add --include flag](https://github.com/gios/gzipper/pull/20)`,
-  },
-  {
     url: "francisrstokes/construct-js",
     text: `[Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30)`,
-  },
-  {
-    url: "nikolalsvk/pusher-js-mock",
-    text: `[Add unbind_all() method](https://github.com/nikolalsvk/pusher-js-mock/pull/35)`,
   },
   {
     url: "mobxjs/mobx-angular",
