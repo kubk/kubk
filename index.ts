@@ -19,7 +19,7 @@ const getArticlesAsString = async () => {
   const feed = await rssParser.parseURL("https://teletype.in/rss/alteregor");
 
   return feed.items
-    .slice(0, 4)
+    .slice(0, 5)
     .reduce((acc: string, item: { title: string; link: string }) => {
       return `${acc}
 - [${item.title}](${item.link})`;

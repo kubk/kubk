@@ -8,6 +8,5 @@ My projects:
 
 My contributions to Open Source:
 //repos
-
 Latest blog posts:
 //posts
