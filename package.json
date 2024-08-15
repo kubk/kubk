@@ -1,7 +1,7 @@
 {
   "name": "kubk",
   "version": "1.0.0",
-  "description": "Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and software testing. Latest blog posts:",
+  "description": "kubk GitHub README",
   "main": "index.js",
   "scripts": {
     "generate": "npx ts-node index.ts"
