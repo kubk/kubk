@@ -36,7 +36,7 @@ const formatStarsCount = (count: number) => {
 const contributedRepositories = [
   {
     url: "mobxjs/mobx",
-    text: `[23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Circle CI with GitHub CI](https://github.com/mobxjs/mobx/pull/3604)`,
+    text: `[23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213)`,
   },
   {
     url: 'phpstan/phpstan',
