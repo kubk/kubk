@@ -1,6 +1,7 @@
 import axios from "axios";
-const Parser = require("rss-parser");
+import Parser from 'rss-parser';
 import { readFile, writeFile } from "fs/promises";
+import puppeteer, {Browser} from "puppeteer";
 
 const replaceReadmeContent = async (
   replacements: Array<{ search: RegExp; replaceWith: string }>
@@ -14,16 +15,20 @@ const replaceReadmeContent = async (
   await writeFile("README.md", readmeContents);
 };
 
-const getArticlesAsString = async () => {
-  const rssParser = new Parser();
+const getArticlesAsString = async (browser: Browser) => {
+  const rssParser = new Parser<any>();
   const feed = await rssParser.parseURL("https://teletype.in/rss/alteregor");
 
-  return feed.items
+  const articles = feed.items
     .slice(0, 5)
-    .reduce((acc: string, item: { title: string; link: string }) => {
-      return `${acc}
-- [${item.title}](${item.link})`;
-    }, "");
+    // .slice(0, 2);
+
+  const scrapedArticles = await Promise.all(articles.map(async (article: any) => {
+    const articleInfo = await scrapeTeletypeArticleInfo(browser, article.link);
+    return `- [${article.title}](${article.link})${articleInfo ? ` (${articleInfo})` : ''}`;
+  }));
+
+  return scrapedArticles.join('\n');
 };
 
 const formatStarsCount = (count: number) => {
@@ -67,6 +72,7 @@ const contributedRepositories = [
 const getRepositoriesAsString = async () => {
   let newReposContents = "";
   for (const repo of contributedRepositories) {
+    console.log('Processing GitHub repo:', repo.url);
     const [, repoName] = repo.url.split("/");
     const result = await axios
       .get<{ stargazers_count: number }>(
@@ -82,9 +88,32 @@ const getRepositoriesAsString = async () => {
   return newReposContents;
 };
 
+async function scrapeTeletypeArticleInfo(browser: Browser, url: string): Promise<string | null> {
+  try {
+    const page = await browser.newPage();
+    console.log('Scraping:', url);
+    await page.goto(url, { waitUntil: 'networkidle0' });
+
+    const articleInfo = await page.evaluate(() => {
+      const elements = document.querySelectorAll('.articleInfo__item');
+      // @ts-expect-error;
+      const text = elements[2]?.innerText;
+      return text ? text.replace('\n', '') : null;
+    });
+    console.log('Scraped:', articleInfo);
+
+    return articleInfo;
+  } catch (error) {
+    console.error('An error occurred:', error);
+    return null;
+  }
+}
+
 (async () => {
+  const browser = await puppeteer.launch();
   await replaceReadmeContent([
     { search: /\/\/repos/s, replaceWith: await getRepositoriesAsString() },
-    { search: /\/\/posts/s, replaceWith: await getArticlesAsString() },
+    { search: /\/\/posts/s, replaceWith: await getArticlesAsString(browser) },
   ]);
+  await browser.close();
 })();
