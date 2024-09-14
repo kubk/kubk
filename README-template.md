@@ -6,5 +6,9 @@ My projects:
 
 My contributions to Open Source:
 //repos
-Latest blog posts:
+
+Talks:
+- [Using Supabase in a real-world project](https://www.youtube.com/watch%20?v=Tra9NbAwSEY)
+
+Blog posts:
 //posts
