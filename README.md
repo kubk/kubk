@@ -15,7 +15,7 @@ My contributions to Open Source:
 
 
 Talks:
-- [Using Supabase in a real-world project](https://www.youtube.com/watch%20?v=Tra9NbAwSEY)
+- [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
 - [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.0K views)

@@ -8,7 +8,7 @@ My contributions to Open Source:
 //repos
 
 Talks:
-- [Using Supabase in a real-world project](https://www.youtube.com/watch%20?v=Tra9NbAwSEY)
+- [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
 //posts
