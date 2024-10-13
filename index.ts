@@ -1,7 +1,7 @@
 import axios from "axios";
-import Parser from 'rss-parser';
+import Parser from "rss-parser";
 import { readFile, writeFile } from "fs/promises";
-import puppeteer, {Browser} from "puppeteer";
+import puppeteer, { Browser } from "puppeteer";
 
 const replaceReadmeContent = async (
   replacements: Array<{ search: RegExp; replaceWith: string }>
@@ -19,16 +19,22 @@ const getArticlesAsString = async (browser: Browser) => {
   const rssParser = new Parser<any>();
   const feed = await rssParser.parseURL("https://teletype.in/rss/alteregor");
 
-  const articles = feed.items
-    .slice(0, 5)
-    // .slice(0, 2);
+  const articles = feed.items.slice(0, 5);
+  // .slice(0, 2);
 
-  const scrapedArticles = await Promise.all(articles.map(async (article: any) => {
-    const articleInfo = await scrapeTeletypeArticleInfo(browser, article.link);
-    return `- [${article.title}](${article.link})${articleInfo ? ` (${articleInfo})` : ''}`;
-  }));
+  const scrapedArticles = await Promise.all(
+    articles.map(async (article: any) => {
+      const articleInfo = await scrapeTeletypeArticleInfo(
+        browser,
+        article.link
+      );
+      return `- [${article.title}](${article.link})${
+        articleInfo ? ` (${articleInfo})` : ""
+      }`;
+    })
+  );
 
-  return scrapedArticles.join('\n');
+  return scrapedArticles.join("\n");
 };
 
 const formatStarsCount = (count: number) => {
@@ -44,8 +50,8 @@ const contributedRepositories = [
     text: `[23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213)`,
   },
   {
-    url: 'phpstan/phpstan',
-    text: `[Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371)`
+    url: "phpstan/phpstan",
+    text: `[Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371)`,
   },
   {
     url: "katspaugh/wavesurfer.js",
@@ -72,7 +78,7 @@ const contributedRepositories = [
 const getRepositoriesAsString = async () => {
   let newReposContents = "";
   for (const repo of contributedRepositories) {
-    console.log('Processing GitHub repo:', repo.url);
+    console.log("Processing GitHub repo:", repo.url);
     const [, repoName] = repo.url.split("/");
     const result = await axios
       .get<{ stargazers_count: number }>(
@@ -88,23 +94,26 @@ const getRepositoriesAsString = async () => {
   return newReposContents;
 };
 
-async function scrapeTeletypeArticleInfo(browser: Browser, url: string): Promise<string | null> {
+async function scrapeTeletypeArticleInfo(
+  browser: Browser,
+  url: string
+): Promise<string | null> {
   try {
     const page = await browser.newPage();
-    console.log('Scraping:', url);
-    await page.goto(url, { waitUntil: 'networkidle0' });
+    console.log("Scraping:", url);
+    await page.goto(url, { waitUntil: "networkidle0", timeout: 30000 * 4 });
 
     const articleInfo = await page.evaluate(() => {
-      const elements = document.querySelectorAll('.articleInfo__item');
+      const elements = document.querySelectorAll(".articleInfo__item");
       // @ts-expect-error;
       const text = elements[2]?.innerText;
-      return text ? text.replace('\n', '') : null;
+      return text ? text.replace("\n", "") : null;
     });
-    console.log('Scraped:', articleInfo);
+    console.log("Scraped:", articleInfo);
 
     return articleInfo;
   } catch (error) {
-    console.error('An error occurred:', error);
+    console.error("An error occurred:", error);
     return null;
   }
 }
