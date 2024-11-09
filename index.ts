@@ -104,9 +104,9 @@ async function scrapeTeletypeArticleInfo(
     await page.goto(url, { waitUntil: "networkidle0", timeout: 30000 * 4 });
 
     const articleInfo = await page.evaluate(() => {
-      const elements = document.querySelectorAll(".articleInfo__item");
+      const elements = document.querySelectorAll(".articleInfo-item");
       // @ts-expect-error;
-      const text = elements[2]?.innerText;
+      const text = elements[3]?.innerText;
       return text ? text.replace("\n", "") : null;
     });
     console.log("Scraped:", articleInfo);
