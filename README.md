@@ -5,8 +5,8 @@ Pet projects:
 - [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [250000+](https://npm-stat.com/charts.html?package=mobx-log&from=2016-02-12) total downloads
 
 My contributions to Open Source:
-- mobx (⭐27.5k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
-- phpstan (⭐12.9k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
+- mobx (⭐27.6k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
+- phpstan (⭐13.0k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - wavesurfer.js (⭐8.8k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
 - ts-essentials (⭐3.8k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - botman (⭐6.1k+️) - [Add PSR-11 ContainerInterface](https://github.com/botman/botman/pull/714) (merged)
@@ -18,8 +18,8 @@ Talks:
 - [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
-- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (8.9K views)
-- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (487 views)
-- [Configure multiple entry points for Create React App without the eject](https://teletype.in/@alteregor/cra-multiple-entry-points?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.4K views)
+- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (9.4K views)
+- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (496 views)
+- [Configure multiple entry points for Create React App without the eject](https://teletype.in/@alteregor/cra-multiple-entry-points?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.5K views)
 - [A simple Mobx under 50 LOC to understand observer pattern](https://teletype.in/@alteregor/mobx-50-loc?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (2.0K views)
-- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (207 views)
+- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (209 views)
