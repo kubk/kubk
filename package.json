@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "typecheck": "npx tsc --noEmit",
-    "generate": "tsx index.ts"
+    "generate": "npm run typecheck && tsx index.ts"
   },
   "repository": {
     "type": "git",
