@@ -1,0 +1,53 @@
+name: Generate README
+
+on:
+  # For testing
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+  # Weekly schedule
+  schedule:
+    - cron: '0 6 * * 5' # Runs every Friday at 6:00 UTC
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      # Install required dependencies for Puppeteer
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgbm-dev
+
+      - name: Run generate script
+        run: npm run generate
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
+          PUPPETEER_ARGS: "--no-sandbox"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Automatic README update
+          branch: readme-update
+          base: main
+          title: 'Automatic README update'
+          body: |
+            This PR updates the README with:
+            - Latest blog posts
+            - Updated repository stats
+          delete-branch: true
