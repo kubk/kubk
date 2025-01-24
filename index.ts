@@ -4,7 +4,7 @@ import { readFile, writeFile } from "fs/promises";
 import puppeteer, { Browser } from "puppeteer";
 
 const replaceReadmeContent = async (
-  replacements: Array<{ search: RegExp; replaceWith: string }>
+  replacements: Array<{ search: RegExp; replaceWith: string }>,
 ) => {
   let readmeContents = await readFile("README-template.md", "utf-8");
 
@@ -26,12 +26,12 @@ const getArticlesAsString = async (browser: Browser) => {
     articles.map(async (article: any) => {
       const articleInfo = await scrapeTeletypeArticleInfo(
         browser,
-        article.link
+        article.link,
       );
       return `- [${article.title}](${article.link})${
         articleInfo ? ` (${articleInfo})` : ""
       }`;
-    })
+    }),
   );
 
   return scrapedArticles.join("\n");
@@ -81,13 +81,13 @@ const getRepositoriesAsString = async () => {
     console.log("Processing GitHub repo:", repo.url);
     const [, repoName] = repo.url.split("/");
     const result = await axios
-      .get<{ stargazers_count: number }>(
-        `https://api.github.com/repos/${repo.url}`
-      )
+      .get<{
+        stargazers_count: number;
+      }>(`https://api.github.com/repos/${repo.url}`)
       .then((res) => res.data);
 
     newReposContents += `- ${repoName} (${formatStarsCount(
-      result.stargazers_count
+      result.stargazers_count,
     )}) - ${repo.text} (merged)\n`;
   }
 
@@ -96,7 +96,7 @@ const getRepositoriesAsString = async () => {
 
 async function scrapeTeletypeArticleInfo(
   browser: Browser,
-  url: string
+  url: string,
 ): Promise<string | null> {
   try {
     const page = await browser.newPage();
@@ -121,7 +121,7 @@ async function scrapeTeletypeArticleInfo(
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
   await replaceReadmeContent([
     { search: /\/\/repos/s, replaceWith: await getRepositoriesAsString() },
