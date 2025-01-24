@@ -19,7 +19,7 @@ Talks:
 
 Blog posts:
 - [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (14.5K views)
-- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (651 views)
+- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (654 views)
 - [Configure multiple entry points for Create React App without the eject](https://teletype.in/@alteregor/cra-multiple-entry-points?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.5K views)
 - [A simple Mobx under 50 LOC to understand observer pattern](https://teletype.in/@alteregor/mobx-50-loc?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (2.1K views)
-- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (232 views)
+- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (234 views)
