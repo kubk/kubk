@@ -33,9 +33,4 @@ jobs:
         run: npm run generate
         env:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
-        # Add sandbox configuration
-        with:
-          args: --no-sandbox --disable-setuid-sandbox
-
-      - name: Run typecheck
-        run: npm run typecheck
+          PUPPETEER_ARGS: "--no-sandbox --disable-setuid-sandbox"
