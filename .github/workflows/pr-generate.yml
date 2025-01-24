@@ -23,25 +23,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Install Chrome browser
-      - name: Install Chrome
-        uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: stable
-        id: setup-chrome
-
       # Install required dependencies for Puppeteer
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libgbm-dev
-          # Set correct permissions for Chrome sandbox
-          sudo chown root:root ${{ steps.setup-chrome.outputs.chrome-path }}
-          sudo chmod 4755 ${{ steps.setup-chrome.outputs.chrome-path }}
 
       - name: Run generate script
         run: npm run generate
         env:
-          PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
           PUPPETEER_ARGS: "--no-sandbox"

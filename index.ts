@@ -119,7 +119,10 @@ async function scrapeTeletypeArticleInfo(
 }
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   await replaceReadmeContent([
     { search: /\/\/repos/s, replaceWith: await getRepositoriesAsString() },
     { search: /\/\/posts/s, replaceWith: await getArticlesAsString(browser) },
