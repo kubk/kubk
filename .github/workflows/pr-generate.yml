@@ -35,9 +35,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libgbm-dev
+          # Set correct permissions for Chrome sandbox
+          sudo chown root:root ${{ steps.setup-chrome.outputs.chrome-path }}
+          sudo chmod 4755 ${{ steps.setup-chrome.outputs.chrome-path }}
 
       - name: Run generate script
         run: npm run generate
         env:
           PUPPETEER_EXECUTABLE_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+          PUPPETEER_ARGS: "--no-sandbox"
