@@ -1,0 +1,41 @@
+name: PR Generate Test
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  test-generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      # Install required dependencies for Puppeteer
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgbm-dev
+
+      - name: Run generate script
+        run: npm run generate
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+        # Add sandbox configuration
+        with:
+          args: --no-sandbox --disable-setuid-sandbox
+
+      - name: Run typecheck
+        run: npm run typecheck
