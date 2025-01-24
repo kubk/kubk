@@ -1,13 +1,16 @@
-name: PR Generate Test
+name: Generate README
 
 on:
+  # For testing
   pull_request:
     types: [opened, synchronize]
-  # Allow manual trigger
   workflow_dispatch:
+  # Weekly schedule
+  schedule:
+    - cron: '0 6 * * 5' # Runs every Friday at 6:00 UTC
 
 jobs:
-  test-generate:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
@@ -39,9 +42,12 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Test PR Generate
-          branch: test-pr-generate
+          commit-message: Automatic README update
+          branch: readme-update
           base: main
-          title: 'Test PR Generate'
-          body: 'This is a test PR to verify the PR generation workflow'
+          title: 'Automatic README update'
+          body: |
+            This PR updates the README with:
+            - Latest blog posts
+            - Updated repository stats
           delete-branch: true
