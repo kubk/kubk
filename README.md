@@ -18,8 +18,8 @@ Talks:
 - [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
-- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (15.2K views)
-- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (671 views)
+- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (15.5K views)
+- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (676 views)
 - [Configure multiple entry points for Create React App without the eject](https://teletype.in/@alteregor/cra-multiple-entry-points?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.6K views)
 - [A simple Mobx under 50 LOC to understand observer pattern](https://teletype.in/@alteregor/mobx-50-loc?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (2.1K views)
-- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (237 views)
+- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (239 views)
