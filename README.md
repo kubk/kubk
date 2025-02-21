@@ -8,7 +8,7 @@ My contributions to Open Source:
 - mobx (⭐27.7k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
 - phpstan (⭐13.2k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - wavesurfer.js (⭐9.1k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
-- ts-essentials (⭐3.8k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
+- ts-essentials (⭐3.9k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - botman (⭐6.1k+️) - [Add PSR-11 ContainerInterface](https://github.com/botman/botman/pull/714) (merged)
 - construct-js (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
 - mobx-angular (⭐485) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
@@ -18,8 +18,8 @@ Talks:
 - [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
-- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (15.5K views)
-- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (676 views)
+- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (15.8K views)
+- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (683 views)
 - [Configure multiple entry points for Create React App without the eject](https://teletype.in/@alteregor/cra-multiple-entry-points?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.6K views)
 - [A simple Mobx under 50 LOC to understand observer pattern](https://teletype.in/@alteregor/mobx-50-loc?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (2.1K views)
-- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (239 views)
+- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (240 views)
