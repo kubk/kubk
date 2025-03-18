@@ -62,8 +62,8 @@ const contributedRepositories = [
     text: `[Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136)`,
   },
   {
-    url: "botman/botman",
-    text: `[Add PSR-11 ContainerInterface](https://github.com/botman/botman/pull/714)`,
+    url: "assistant-ui/assistant-ui",
+    text: `[Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711)`,
   },
   {
     url: "francisrstokes/construct-js",
