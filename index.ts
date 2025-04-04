@@ -106,7 +106,7 @@ async function scrapeTeletypeArticleInfo(
     const articleInfo = await page.evaluate(() => {
       const elements = document.querySelectorAll(".articleInfo-item");
       // @ts-expect-error;
-      const text = elements[3]?.innerText;
+      const text = elements[2]?.innerText;
       return text ? text.replace("\n", "") : null;
     });
     console.log("Scraped:", articleInfo);
