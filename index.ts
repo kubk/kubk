@@ -76,19 +76,33 @@ const contributedRepositories = [
 ];
 
 const getRepositoriesAsString = async () => {
-  let newReposContents = "";
-  for (const repo of contributedRepositories) {
-    console.log("Processing GitHub repo:", repo.url);
-    const [, repoName] = repo.url.split("/");
-    const result = await axios
-      .get<{
-        stargazers_count: number;
-      }>(`https://api.github.com/repos/${repo.url}`)
-      .then((res) => res.data);
+  // Fetch all repository data with star counts first
+  const reposWithStars = await Promise.all(
+    contributedRepositories.map(async (repo) => {
+      console.log("Processing GitHub repo:", repo.url);
+      const [, repoName] = repo.url.split("/");
+      const result = await axios
+        .get<{
+          stargazers_count: number;
+        }>(`https://api.github.com/repos/${repo.url}`)
+        .then((res) => res.data);
 
-    newReposContents += `- ${repoName} (${formatStarsCount(
-      result.stargazers_count,
-    )}) - ${repo.text} (merged)\n`;
+      return {
+        ...repo,
+        repoName,
+        stars: result.stargazers_count,
+        formattedStars: formatStarsCount(result.stargazers_count)
+      };
+    })
+  );
+
+  // Sort repositories by star count (descending)
+  const sortedRepos = reposWithStars.sort((a, b) => b.stars - a.stars);
+  
+  // Format the sorted repositories as string
+  let newReposContents = "";
+  for (const repo of sortedRepos) {
+    newReposContents += `- ${repo.repoName} (${repo.formattedStars}) - ${repo.text} (merged)\n`;
   }
 
   return newReposContents;
@@ -125,7 +139,7 @@ async function scrapeTeletypeArticleInfo(
   });
   await replaceReadmeContent([
     { search: /\/\/repos/s, replaceWith: await getRepositoriesAsString() },
-    { search: /\/\/posts/s, replaceWith: await getArticlesAsString(browser) },
+    // { search: /\/\/posts/s, replaceWith: await getArticlesAsString(browser) },
   ]);
   await browser.close();
 })();
