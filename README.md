@@ -2,7 +2,7 @@ Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing,
 
 Pet projects:
 - [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition.
-- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [350k+](https://npm-stat.com/charts.html?package=mobx-log&from=2016-02-12) total downloads
+- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [430k+](https://npm-stat.com/charts.html?package=mobx-log&from=2016-02-12) total downloads
 
 My contributions to Open Source:
 - mobx (⭐27.9k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
@@ -18,8 +18,8 @@ Talks:
 - [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
-- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (18.2K views)
+- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (18.9K views)
 - [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (817 views)
 - [Configure multiple entry points for Create React App without the eject](https://teletype.in/@alteregor/cra-multiple-entry-points?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (4.6K views)
 - [A simple Mobx under 50 LOC to understand observer pattern](https://teletype.in/@alteregor/mobx-50-loc?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (2.3K views)
-- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (263 views)
+- [Display calendar using SQL](https://teletype.in/@alteregor/sql-calendar?utm_source=teletype&utm_medium=feed_rss&utm_campaign=alteregor) (269 views)
