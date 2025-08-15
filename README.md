@@ -2,16 +2,16 @@ Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing,
 
 Pet projects:
 - [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition.
-- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [500k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [500+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
 
 My contributions to Open Source:
 - mobx (⭐28.0k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
 - phpstan (⭐13.5k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - wavesurfer.js (⭐9.6k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
-- assistant-ui (⭐5.6k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
+- assistant-ui (⭐5.9k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
 - ts-essentials (⭐4.0k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - construct-js (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
-- mobx-angular (⭐481) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
+- mobx-angular (⭐480) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
 
 
 Talks:
