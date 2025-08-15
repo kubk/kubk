@@ -2,7 +2,7 @@ Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing,
 
 Pet projects:
 - [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition.
-- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [500+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [500k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
 
 My contributions to Open Source:
 //repos
