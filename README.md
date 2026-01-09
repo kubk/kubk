@@ -5,7 +5,7 @@ Pet projects:
 - [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
 
 My contributions to Open Source:
-- mobx (⭐28.1k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
+- mobx (⭐28.2k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
 - phpstan (⭐13.8k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - wavesurfer.js (⭐10.0k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
 - assistant-ui (⭐7.9k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
