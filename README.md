@@ -1,10 +1,10 @@
 Hi there 👋 I am an AI TypeScript Engineer turned Founder
 
 My projects:
-- 🤖 [bd1.ai](https://bd1.ai/) - #1 AI assistant for Telegram
-- 🧠 [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition
-- 📦 [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
-- 🚫 [Just Block](https://github.com/just-block/just-block.github.io) - A Chrome extension to quickly block distracting websites
+- 💬 **[BD1.ai](https://bd1.ai/)** - B2B AI assistant for Telegram
+- 🧠 **[MemoCard](https://github.com/kubk/memo-card)** - Award-winning Telegram mini app for improving memory with spaced repetition
+- 📝 **[mobx-log](https://github.com/kubk/mobx-log)** - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+- 🚫 **[Just Block](https://github.com/just-block/just-block.github.io)** - A Chrome extension to quickly block distracting websites
 
 My contributions to Open Source:
 - mobx (⭐28.2k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
