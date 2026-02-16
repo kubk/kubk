@@ -4,9 +4,9 @@ My projects:
 - 💬 **[BD1.ai](https://bd1.ai/)** - B2B AI assistant for Telegram
 - 🧠 **[MemoCard](https://github.com/kubk/memo-card)** - Award-winning Telegram mini app for improving memory with spaced repetition
 - 📝 **[mobx-log](https://github.com/kubk/mobx-log)** - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
-- 🚫 **[Just Block](https://github.com/just-block/just-block.github.io)** - A Chrome extension to quickly block distracting websites
+- 🔒 **[Just Block](https://github.com/just-block/just-block.github.io)** - A Chrome extension to quickly block distracting websites
 
-My contributions to Open Source:
+Open Source contributions:
 //repos
 
 Blog posts:
