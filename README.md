@@ -1,8 +1,10 @@
-Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and software testing.
+Hi there 👋 I am an AI TypeScript Engineer turned Founder
 
-Pet projects:
-- [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition.
-- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+My projects:
+- 🤖 [bd1.ai](https://bd1.ai/) - #1 AI assistant for Telegram
+- 🧠 [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition
+- 📦 [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+- 🚫 [Just Block](https://github.com/just-block/just-block.github.io) - A Chrome extension to quickly block distracting websites
 
 My contributions to Open Source:
 - mobx (⭐28.2k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
@@ -13,9 +15,6 @@ My contributions to Open Source:
 - construct-js (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
 - mobx-angular (⭐481) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
 
-
-Talks:
-- [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
 - [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars) (20.4K views)
