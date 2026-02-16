@@ -1,14 +1,13 @@
-Hi there 👋 I am a full-stack developer passionate about UI/UX, static typing, and software testing.
+Hi there 👋 I am an AI TypeScript Engineer turned Founder
 
-Pet projects:
-- [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition.
-- [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+My projects:
+- 🤖 [bd1.ai](https://bd1.ai/) - #1 AI assistant for Telegram
+- 🧠 [MemoCard](https://github.com/kubk/memo-card) - Award-winning Telegram mini app for improving memory with spaced repetition
+- 📦 [mobx-log](https://github.com/kubk/mobx-log) - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
+- 🚫 [Just Block](https://github.com/just-block/just-block.github.io) - A Chrome extension to quickly block distracting websites
 
 My contributions to Open Source:
 //repos
-
-Talks:
-- [Using Supabase in a real-world project](https://www.youtube.com/watch?v=Tra9NbAwSEY)
 
 Blog posts:
 - [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars) (20.4K views)
