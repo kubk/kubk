@@ -1,4 +1,4 @@
-Hi there 👋 I am an AI TypeScript Engineer turned Founder
+Hi there 👋 I am a FullStack Engineer turned Founder
 
 My projects:
 - 💬 **[BD1.ai](https://bd1.ai/)** - B2B AI assistant for Telegram
