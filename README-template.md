@@ -5,6 +5,8 @@ My projects:
 - 🧠 **[MemoCard](https://github.com/kubk/memo-card)** - Award-winning Telegram mini app for improving memory with spaced repetition
 - 📝 **[mobx-log](https://github.com/kubk/mobx-log)** - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
 - 🔒 **[Just Block](https://github.com/just-block/just-block.github.io)** - A Chrome extension to quickly block distracting websites
+- ✂️ **[git-filter](https://github.com/kubk/git-filter)** - Publish parts of the private repository as open source
+- 💸 **[Nomad Expense](https://github.com/kubk/nomad-expense)** - Family expense tracker as a Telegram mini app
 
 Open Source contributions:
 //repos
