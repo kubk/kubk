@@ -102,7 +102,7 @@ const getRepositoriesAsString = async () => {
   // Format the sorted repositories as string
   let newReposContents = "";
   for (const repo of sortedRepos) {
-    newReposContents += `- ${repo.repoName} (${repo.formattedStars}) - ${repo.text} (merged)\n`;
+    newReposContents += `- **${repo.repoName}** (${repo.formattedStars}) - ${repo.text} (merged)\n`;
   }
 
   return newReposContents;
