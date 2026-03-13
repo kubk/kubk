@@ -6,9 +6,9 @@ My projects:
 - 🔒 **[Just Block](https://github.com/just-block/just-block.github.io)** - A Chrome extension to quickly block distracting websites
 - ✂️ **[git-filter](https://github.com/kubk/git-filter)** - Publish parts of the private repository as open source
 - 💸 **[Nomad Expense](https://github.com/kubk/nomad-expense)** - Family expense tracker as a Telegram mini app
-- 🎯 **[Alias](https://github.com/kubk/alias)** - Word-guessing party game as a PWA
+- 🎯 **[Alias](https://github.com/kubk/alias)** - Word-guessing game as a PWA
 - 📋 **[Github Copy-to-LLM](https://github.com/kubk/github-copy-to-llm)** - Chrome extension that adds Copy-to-LLM button to GitHub's README and gists
-- 📊 **[gauge-chart-js](https://github.com/kubk/gauge-chart-js)** - A tiny library for rendering gauge charts with conical/polar gradients
+- 📊 **[gauge-chart-js](https://github.com/kubk/gauge-chart-js)** - A library for rendering gauge charts with conical/polar gradients
 
 Open Source contributions:
 - **mobx** (⭐28.2k+️) - [23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
