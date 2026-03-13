@@ -7,8 +7,8 @@ My projects:
 - ✂️ **[git-filter](https://github.com/kubk/git-filter)** - Publish parts of the private repository as open source
 - 💸 **[Nomad Expense](https://github.com/kubk/nomad-expense)** - Family expense tracker as a Telegram mini app
 - 🎯 **[Alias](https://github.com/kubk/alias)** - Word-guessing party game as a PWA
+- 📋 **[Github Copy-to-LLM](https://github.com/kubk/github-copy-to-llm)** - Chrome extension that adds Copy-to-LLM button to GitHub's README and gists
 - 📊 **[gauge-chart-js](https://github.com/kubk/gauge-chart-js)** - A tiny library for rendering gauge charts with conical/polar gradients
-- 🤖 **[github-copy-to-llm](https://github.com/kubk/github-copy-to-llm)** - Chrome extension that adds Copy-to-LLM button to GitHub's README and gists
 
 Open Source contributions:
 //repos
