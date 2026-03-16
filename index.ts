@@ -44,10 +44,17 @@ const formatStarsCount = (count: number) => {
   return `⭐${(Math.round((count / 1000) * 10) / 10).toFixed(1)}k+️`;
 };
 
+const getMobxPrCount = async (): Promise<number> => {
+  const res = await axios.get<{ total_count: number }>(
+    "https://api.github.com/search/issues?q=is:pr+is:closed+author:kubk+repo:mobxjs/mobx",
+  );
+  return res.data.total_count;
+};
+
 const contributedRepositories = [
   {
     url: "mobxjs/mobx",
-    text: `[23 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213)`,
+    text: ``, // populated dynamically
   },
   {
     url: "phpstan/phpstan",
@@ -76,6 +83,11 @@ const contributedRepositories = [
 ];
 
 const getRepositoriesAsString = async () => {
+  // Fetch MobX PR count dynamically
+  const mobxPrCount = await getMobxPrCount();
+  const mobxRepo = contributedRepositories.find((r) => r.url === "mobxjs/mobx")!;
+  mobxRepo.text = `[${mobxPrCount} PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213)`;
+
   // Fetch all repository data with star counts first
   const reposWithStars = await Promise.all(
     contributedRepositories.map(async (repo) => {
