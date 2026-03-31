@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/kubk/kubk#readme",
   "dependencies": {
-    "axios": "^0.27.2",
     "puppeteer": "^23.2.1",
     "rss-parser": "^3.12.0",
     "tsx": "^4.19.0",

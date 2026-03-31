@@ -1,4 +1,3 @@
-import axios from "axios";
 import Parser from "rss-parser";
 import { readFile, writeFile } from "fs/promises";
 import puppeteer, { Browser } from "puppeteer";
@@ -44,11 +43,23 @@ const formatStarsCount = (count: number) => {
   return `⭐${(Math.round((count / 1000) * 10) / 10).toFixed(1)}k+️`;
 };
 
+const fetchJson = async <T>(url: string): Promise<T> => {
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(
+      `Request to ${url} failed with ${response.status} ${response.statusText}`,
+    );
+  }
+
+  return (await response.json()) as T;
+};
+
 const getMobxPrCount = async (): Promise<number> => {
-  const res = await axios.get<{ total_count: number }>(
+  const res = await fetchJson<{ total_count: number }>(
     "https://api.github.com/search/issues?q=is:pr+is:closed+author:kubk+repo:mobxjs/mobx",
   );
-  return res.data.total_count;
+  return res.total_count;
 };
 
 const contributedRepositories = [
@@ -93,24 +104,22 @@ const getRepositoriesAsString = async () => {
     contributedRepositories.map(async (repo) => {
       console.log("Processing GitHub repo:", repo.url);
       const [, repoName] = repo.url.split("/");
-      const result = await axios
-        .get<{
-          stargazers_count: number;
-        }>(`https://api.github.com/repos/${repo.url}`)
-        .then((res) => res.data);
+      const result = await fetchJson<{
+        stargazers_count: number;
+      }>(`https://api.github.com/repos/${repo.url}`);
 
       return {
         ...repo,
         repoName,
         stars: result.stargazers_count,
-        formattedStars: formatStarsCount(result.stargazers_count)
+        formattedStars: formatStarsCount(result.stargazers_count),
       };
-    })
+    }),
   );
 
   // Sort repositories by star count (descending)
   const sortedRepos = reposWithStars.sort((a, b) => b.stars - a.stars);
-  
+
   // Format the sorted repositories as string
   let newReposContents = "";
   for (const repo of sortedRepos) {
