@@ -1,6 +1,4 @@
-Hi there 👋 
-
-My projects:
+Hi there 👋 My projects:
 - 🧠 **[MemoCard](https://github.com/kubk/memo-card)** - Award-winning Telegram mini app for improving memory with spaced repetition. 1k MAU
 - 📝 **[mobx-log](https://github.com/kubk/mobx-log)** - Logging library for MobX. [600k+](https://npm-stat.com/charts.html?package=mobx-log&from=2020-02-12) total downloads
 - ✂️ **[git-filter](https://github.com/kubk/git-filter)** - Publish parts of the private repository as open source
