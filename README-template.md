@@ -1,4 +1,6 @@
-Hi there 👋 Visit my website: https://egor.is-a.dev
+Hi there 👋 Hi there 👋 I'm Egor - full-stack developer
+
+Website: https://egor.is-a.dev
 
 Open Source contributions:
 //repos

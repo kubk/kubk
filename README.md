@@ -1,4 +1,6 @@
-Hi there 👋 Visit my website: https://egor.is-a.dev
+Hi there 👋 Hi there 👋 I'm Egor - full-stack developer
+
+Website: https://egor.is-a.dev
 
 Open Source contributions:
 - **mobx** (⭐28.2k+️) - [27 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
