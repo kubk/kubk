@@ -1,4 +1,4 @@
-Hi there 👋 I'm Egor - full-stack developer
+Hi there 👋 I'm Egor - Software Engineer
 
 Website: https://egor.is-a.dev
 
