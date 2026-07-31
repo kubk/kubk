@@ -7,7 +7,11 @@ on:
   workflow_dispatch:
   # Weekly schedule
   schedule:
-    - cron: '0 6 * * 5' # Runs every Friday at 6:00 UTC
+    - cron: "0 6 * * 5" # Runs every Friday at 6:00 UTC
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   generate:
@@ -15,13 +19,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm install
@@ -39,15 +43,29 @@ jobs:
           PUPPETEER_ARGS: "--no-sandbox"
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        id: create-pull-request
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Automatic README update
           branch: readme-update
           base: main
-          title: 'Automatic README update'
+          title: "Automatic README update"
           body: |
             This PR updates the README with:
             - Latest blog posts
             - Updated repository stats
           delete-branch: true
+
+      - name: Merge Pull Request
+        if: >-
+          github.event_name != 'pull_request' &&
+          (steps.create-pull-request.outputs.pull-request-operation == 'created' ||
+          steps.create-pull-request.outputs.pull-request-operation == 'updated')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_HEAD_SHA: ${{ steps.create-pull-request.outputs.pull-request-head-sha }}
+          PR_NUMBER: ${{ steps.create-pull-request.outputs.pull-request-number }}
+        run: >-
+          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
+          --match-head-commit "$PR_HEAD_SHA" --squash --delete-branch
