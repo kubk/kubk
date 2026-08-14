@@ -5,7 +5,7 @@ Website: https://egor.is-a.dev
 Open Source contributions:
 - **mobx** (⭐28.2k+️) - [39 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
 - **phpstan** (⭐14.1k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
-- **assistant-ui** (⭐11.5k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
+- **assistant-ui** (⭐11.6k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
 - **wavesurfer.js** (⭐10.4k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
 - **ts-essentials** (⭐4.1k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - **construct-js** (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
