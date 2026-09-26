@@ -1,10 +1,11 @@
 {
   "name": "kubk",
   "version": "1.0.0",
+  "packageManager": "pnpm@9.15.9",
   "description": "kubk GitHub README",
   "main": "index.js",
   "scripts": {
-    "typecheck": "npx tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "generate": "tsx index.ts"
   },
   "repository": {

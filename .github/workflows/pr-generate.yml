@@ -21,14 +21,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-          cache: "npm"
+          cache: "pnpm"
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       # Install required dependencies for Puppeteer
       - name: Install system dependencies
@@ -37,7 +42,7 @@ jobs:
           sudo apt-get install -y libgbm-dev
 
       - name: Run generate script
-        run: npm run generate
+        run: pnpm run generate
         env:
           PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
           PUPPETEER_ARGS: "--no-sandbox"
