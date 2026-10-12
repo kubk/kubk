@@ -3,7 +3,7 @@ Hi there 👋 I'm Egor - Software Engineer
 Website: https://egor.is-a.dev
 
 Open Source contributions:
-- **mobx** (⭐28.2k+️) - [43 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
+- **mobx** (⭐28.2k+️) - [48 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
 - **phpstan** (⭐14.1k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
 - **assistant-ui** (⭐12.5k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
 - **wavesurfer.js** (⭐10.4k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
@@ -13,6 +13,6 @@ Open Source contributions:
 
 
 Blog posts:
-- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars) (21K views)
+- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars) (21.2K views)
 - [The difference between type and interface in TypeScript](https://teletype.in/@alteregor/rkPlgmQz8) (11.6K views)
-- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win) (995 views)
+- [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win) (1.1K views)

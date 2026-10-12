@@ -35,17 +35,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # Install required dependencies for Puppeteer
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgbm-dev
-
       - name: Run generate script
         run: pnpm run generate
-        env:
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
-          PUPPETEER_ARGS: "--no-sandbox"
 
       - name: Create Pull Request
         id: create-pull-request

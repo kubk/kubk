@@ -9,6 +9,7 @@ const replaceReadmeContent = async (
     readmeContents = readmeContents.replace(search, replaceWith);
   }
 
+  readmeContents = await updateTeletypeArticleViews(readmeContents);
   await writeFile("README.md", readmeContents);
 };
 
@@ -19,8 +20,11 @@ const formatStarsCount = (count: number) => {
   return `⭐${(Math.round((count / 1000) * 10) / 10).toFixed(1)}k+️`;
 };
 
-const fetchJson = async <T>(url: string): Promise<T> => {
-  const response = await fetch(url);
+const fetchJson = async <T>(
+  url: string,
+  init?: RequestInit,
+): Promise<T> => {
+  const response = await fetch(url, init);
 
   if (!response.ok) {
     throw new Error(
@@ -29,6 +33,84 @@ const fetchJson = async <T>(url: string): Promise<T> => {
   }
 
   return (await response.json()) as T;
+};
+
+const formatViewsCount = (count: number) => {
+  if (count < 1000) {
+    return count.toLocaleString("en-US");
+  }
+
+  return `${(count / 1000).toFixed(1).replace(/\.0$/, "")}K`;
+};
+
+const getTeletypeArticleViews = async (articleUrl: string): Promise<number> => {
+  const parsedUrl = new URL(articleUrl);
+  const articlePath = parsedUrl.pathname.match(/^\/@([^/]+)\/([^/]+)\/?$/);
+
+  if (parsedUrl.hostname !== "teletype.in" || !articlePath) {
+    throw new Error(`Unsupported Teletype article URL: ${articleUrl}`);
+  }
+
+  const [, blogUri, articleUri] = articlePath;
+  const apiUrl =
+    `https://teletype.in/api/blogs/uri/${encodeURIComponent(decodeURIComponent(blogUri))}` +
+    `/articles/${encodeURIComponent(decodeURIComponent(articleUri))}`;
+  const article = await fetchJson<{ views?: unknown }>(apiUrl, {
+    headers: {
+      Accept: "application/json",
+      "User-Agent":
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+      Referer: articleUrl,
+    },
+  });
+
+  if (
+    typeof article.views !== "number" ||
+    !Number.isSafeInteger(article.views) ||
+    article.views < 0
+  ) {
+    throw new Error(
+      `Teletype did not return a valid view count for ${articleUrl}`,
+    );
+  }
+
+  return article.views;
+};
+
+const updateTeletypeArticleViews = async (
+  readmeContents: string,
+): Promise<string> => {
+  const blogPostsHeading = "\nBlog posts:\n";
+  const headingIndex = readmeContents.indexOf(blogPostsHeading);
+
+  if (headingIndex === -1) {
+    throw new Error("README-template.md is missing the Blog posts section");
+  }
+
+  const blogPostsStart = headingIndex + blogPostsHeading.length;
+  const blogPosts = readmeContents.slice(blogPostsStart);
+  const lines = blogPosts.split("\n");
+  const updatedLines = await Promise.all(
+    lines.map(async (line) => {
+      const match = line.match(
+        /^(- \[[^\]]+\]\(https:\/\/teletype\.in\/[^)\s]+\))(?: \([^\n)]*views\))?(?: <!-- views -->)?$/i,
+      );
+
+      if (!match) {
+        return line;
+      }
+
+      const articleUrl = match[1].match(/\((https:\/\/[^)]+)\)/)?.[1];
+      if (!articleUrl) {
+        return line;
+      }
+
+      const views = await getTeletypeArticleViews(articleUrl);
+      return `${match[1]} (${formatViewsCount(views)} views)`;
+    }),
+  );
+
+  return `${readmeContents.slice(0, blogPostsStart)}${updatedLines.join("\n")}`;
 };
 
 const getMobxPrCount = async (): Promise<number> => {
