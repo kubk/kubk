@@ -3,9 +3,9 @@ Hi there 👋 I'm Egor - Software Engineer
 Website: https://egor.is-a.dev
 
 Open Source contributions:
-- **mobx** (⭐28.2k+️) - [55 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
-- **phpstan** (⭐14.1k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
-- **assistant-ui** (⭐13.0k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
+- **mobx** (⭐28.2k+️) - [60 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
+- **phpstan** (⭐14.2k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
+- **assistant-ui** (⭐13.1k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
 - **wavesurfer.js** (⭐10.5k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
 - **ts-essentials** (⭐4.1k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - **construct-js** (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
@@ -13,6 +13,6 @@ Open Source contributions:
 
 
 Blog posts:
-- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars) (21.2K views)
+- [How to integrate Telegram Stars Payment to your bot](https://teletype.in/@alteregor/how-to-integrate-telegram-stars) (21.3K views)
 - [The difference between type and interface in TypeScript](https://teletype.in/@alteregor/rkPlgmQz8) (11.6K views)
 - [How I built a project for myself and won a prize from Telegram](https://teletype.in/@alteregor/memocard-telegram-contest-win) (1.1K views)
