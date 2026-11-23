@@ -1,4 +1,4 @@
-Hi there 👋 I'm Egor - Frontend Engineer at **[Evil Martians](https://evilmartians.com/?utm_source=github&utm_medium=profile&utm_campaign=kubk)** <img src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="Evil Martians logo" width="22" height="16" />
+Hi there 👋 I'm Egor - Frontend Engineer at **[Evil Martians](https://evilmartians.com/?utm_source=github&utm_medium=profile&utm_campaign=kubk)** <img align="absmiddle" src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="Evil Martians logo" width="22" height="16" />
 
 Open Source contributions:
 - **mobx** (⭐28.2k+️) - [62 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
