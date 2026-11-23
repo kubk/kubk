@@ -1,6 +1,4 @@
-Hi there 👋 I'm Egor - Software Engineer
-
-Website: https://egor.is-a.dev
+Hi there 👋 I'm Egor - Frontend Engineer at **[Evil Martians](https://evilmartians.com/?utm_source=github&utm_medium=profile&utm_campaign=kubk)** <img src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="Evil Martians logo" width="22" height="16" />, an American design and engineering consultancy for **developer tools, AI, and cybersecurity startups**.
 
 Open Source contributions:
 //repos
