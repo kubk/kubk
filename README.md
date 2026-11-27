@@ -1,13 +1,13 @@
 Hi there 👋 I'm Egor - Frontend Engineer at **[Evil Martians](https://evilmartians.com/?utm_source=github&utm_medium=profile&utm_campaign=kubk)** <img align="absmiddle" src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="Evil Martians logo" width="22" height="16" />
 
 Open Source contributions:
-- **mobx** (⭐28.2k+️) - [62 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
+- **mobx** (⭐28.2k+️) - [64 PRs](https://github.com/mobxjs/mobx/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Example PR - [Fix type inference of the action callback arguments](https://github.com/mobxjs/mobx/pull/2213) (merged)
 - **phpstan** (⭐14.2k+️) - [Detect enum duplicated values](https://github.com/phpstan/phpstan-src/pull/2371) (merged)
-- **assistant-ui** (⭐13.4k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
+- **assistant-ui** (⭐13.5k+️) - [Add support for dynamic headers in EdgeChatAdapter](https://github.com/assistant-ui/assistant-ui/pull/1711) (merged)
 - **wavesurfer.js** (⭐10.5k+️) - [Waveform with rounded bars](https://github.com/katspaugh/wavesurfer.js/pull/1760) (merged)
 - **ts-essentials** (⭐4.1k+️) - [Simplify Merge type](https://github.com/ts-essentials/ts-essentials/pull/136) (merged)
 - **construct-js** (⭐1.4k+️) - [Use TS assertion signature to avoid type casting](https://github.com/francisrstokes/construct-js/pull/30) (merged)
-- **mobx-angular** (⭐478) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
+- **mobx-angular** (⭐479) - [10 PRs](https://github.com/mobxjs/mobx-angular/pulls?q=is%3Apr+is%3Aclosed+author%3Akubk). Last PR - [Replace Karma with Jest, run tests on CI](https://github.com/mobxjs/mobx-angular/pull/101) (merged)
 
 
 Blog posts:
